@@ -1,6 +1,6 @@
 :root {
-    --primary: #ccdad1;
-    --secondary: #9caea9;
+    --primary: rgb(121, 79, 79);
+    --secondary: #0b1cb3;
     --tertiary: #788585;
     --light-dark: #6f6866;
     --dark: #38302e;
@@ -46,7 +46,7 @@
   }
   
   main {
-    margin: 20px auto;
+    margin: 20px;
     width: 94%;
   }
   
@@ -101,11 +101,11 @@
     display: inline;
   }
   
-  .navbar {
+  /* .navbar {
     width: 100%;
     position: fixed;
     background-color: var(--dark);
-  }
+  } */
   
   .nav-item {
     margin: 0 40px;
@@ -113,7 +113,7 @@
   
   .nav-item a {
     color: var(--primary);
-  }
+  } 
   
   .hero {
     padding: 3% 4%;
