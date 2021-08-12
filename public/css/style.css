@@ -1,10 +1,10 @@
-/* :root {
-    --primary: rgb(121, 79, 79);
-    --secondary: #eb0e0e;
-    --tertiary: #788585;
-    --light-dark: #6f6866;
-    --dark: #38302e;
-    --border-radius: 0.3rem;
+ :root {
+    --primary: #061826;
+    --secondary: #89AAE6;
+    --tertiary: #AC80A0;
+    --light-dark: #89AAE6;
+    --dark: #AC80A0;
+    /* --border-radius: 0.3rem; */
   }
   
   * {
@@ -15,7 +15,7 @@
     background-color: var(--primary);
     margin: 0;
     padding: 0;
-    font-family: "IBM Plex Sans", sans-serif;
+    /* font-family: "IBM Plex Sans", sans-serif; */
     color: var(--dark);
     line-height: 1.5;
     font-size: 16px;
@@ -44,8 +44,9 @@
   }
   
   header {
-    margin-top: 50px;
-  }
+    margin-top: 20px;
+    text-align: center;
+  } 
   
   main {
     margin: 20px;
@@ -103,10 +104,11 @@
     display: inline;
   }
   
-  /* .navbar {
+   .navbar {
     width: 100%;
-    position: fixed;
+    position: inherit;
     background-color: var(--dark);
+    /* padding-top: 15px; */
   } 
   
   .nav-item {
@@ -117,7 +119,7 @@
     color: var(--primary);
   } 
   
-  .hero {
+  /* .hero {
     padding: 3% 4%;
     background-color: var(--dark);
     color: var(--primary);
@@ -125,7 +127,7 @@
   
   .hero p {
     max-width: 75%;
-  }
+  } */
   
   .app-title {
     font-size: 3rem;
@@ -134,7 +136,7 @@
     padding: 0 10px;
     display: inline-block;
     border-radius: var(--border-radius);
-    box-shadow: 6px 5px var(--light-dark);
+    /* box-shadow: 6px 5px var(--light-dark); */
   }
   
   .app-title a {
@@ -149,8 +151,8 @@
     margin-bottom: 10px;
     padding: 1.5%;
     border-radius: var(--border-radius);
-    background-color: var(--light-dark);
-    color: var(--primary);
+    /* background-color: var(--light-dark); */
+    /* color: var(--primary); */
     text-decoration: none;
   }
   
@@ -168,7 +170,7 @@
     text-decoration: none;
   }
   
-  /* CARDS 
+   CARDS 
   .card {
     margin: 0 0 20px 0;
     border: 3px solid var(--dark);
@@ -186,7 +188,7 @@
     padding: 1%;
   }
   
-  /* FORM 
+   FORM 
   .form-label,
   .form-input,
   .form-textarea {
@@ -207,24 +209,26 @@
     border-radius: var(--border-radius);
   }
   
-  /* HEIGHT / WIDTH UTILS 
+ HEIGHT / WIDTH UTILS 
   .min-100-vh {
     min-height: 100vh;
   }
   
   .min-100-vw {
     min-width: 100vw;
-  }
+  } 
   
-  /* FONT UTILS 
+ FONT UTILS 
   .text-uppercase {
     text-transform: uppercase;
   }
   
-  /* FLEX CONTENT 
+   /* FLEX CONTENT  */
   .flex-row {
     display: flex;
     flex-wrap: wrap;
+    padding: 350px;
+
   }
   
   .flex-column {
@@ -317,7 +321,7 @@
     flex: 0 0 100%;
   }
   
-  /* col-sm 
+  /* col-sm  */
   @media screen and (min-width: 640px) {
     .col-sm-1 {
       flex: 0 0 calc(100% * 1 / 12 - 2%);
@@ -368,7 +372,7 @@
     }
   }
   
-  /* col-md 
+  /* col-md  */
   @media screen and (min-width: 768px) {
     .col-md-1 {
       flex: 0 0 calc(100% * 1 / 12 - 2%);
@@ -418,9 +422,9 @@
       flex: 0 0 100%;
     }
   }
-  */
+ 
   
-  /* col-lg 
+  /* col-lg  */
   @media screen and (min-width: 992px) {
     .col-lg-1 {
       flex: 0 0 calc(100% * 1 / 12 - 2%);
@@ -470,9 +474,9 @@
       flex: 0 0 100%;
     }
   }
-  */
+ 
   
-  /* col-xl 
+  /* col-xl  */
   @media screen and (min-width: 1200px) {
     .col-xl-1 {
       flex: 0 0 calc(100% * 1 / 12 - 2%);
@@ -519,76 +523,79 @@
     }
   
     .col-xl-12 {
-      flex: 0 0 100%;
+      flex: 0 0 100%;    }
     }
-  } 
-*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
-* {
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   background: #24252a;
-}
+  border-radius: 25px;
+} */
 
 /* body {
   background-color: white;
-} */
+}  */
 
 
-header {
+/* header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30x 10%;
-}
+} */
 
 /* .logo {
+
+  padding: 25px;
+} */
+
+/* .nav_links {
+  list-style: none;
   cursor: pointer;
   padding: 25px;
 } */
 
-.nav_links {
-  list-style: none;
-  cursor: pointer;
-  padding: 25px;
-}
-
-.nav_links li {
+.li-inline { 
   display: inline-block;
   padding: 0px 20px;
-}
+} 
 
-.nav_links li a {
+.li-inline a {
   transition: all 0.3s ease 0s;
-  color: white;
+  color: #061826;
   padding: 25px;
   
 }
 
-.nav_links li a:hover {
-  color: #0088a9
+.li-inline a:hover {
+  color: white
 }
 
-.col-auto {
+/* .col-auto {
   margin: 600px;
-}
+} */
 
-input {
+/* input {
   width: 100%;
   border: 1px solid #ccc;
   background: #FFF;
   margin: 0 0 5px;
   padding: 10px;
-}
+} */
 
-.card-header h2 {
+/* .card-header h2 {
 color: var(--primary);
-}
+padding: 10px;
+text-align: center;
+color: #0088a9;
+} */
 
-.btn {
+/* .btn {
 font-size: 1.3rem;
 text-decoration: none;
 padding: 6px 5px;
@@ -602,34 +609,34 @@ outline: none;
 background-color: var(--light-dark);
 box-shadow: 3px 3px var(--dark);
 transform: translate(-1px, -1px);
-}
+} */
 
-.btn:hover {
+/* .btn:hover {
 color: var(--primary);
 background-color: var(--tertiary);
 transform: translate(0, 0);
 box-shadow: 2px 2px var(--dark);
-}
+} */
 
-.btn-inline {
+/* .btn-inline {
 display: inline;
-}
+} */
 
-.li-inline {
+/* .li-inline {
 display: inline;
-}
+} */
 
-.hero {
+/* .hero {
   padding: 3% 4%;
   background-color: var(--dark);
   color: var(--primary);
-}
+} */
 
-.hero p {
+/* .hero p {
   max-width: 75%;
-}
+} */
 
-.app-title {
+/* .app-title {
   font-size: 3rem;
   background-color: var(--primary);
   color: var(--dark);
@@ -637,36 +644,57 @@ display: inline;
   display: inline-block;
   border-radius: var(--border-radius);
   box-shadow: 6px 5px var(--light-dark);
-}
+} */
 
-.app-title a {
+/* .app-title a {
   color: var(--dark);
-}
+} */
 
-.list-group {
+/* .list-group {
   padding: 1%;
-}
+} */
 
-.list-item {
+/* .list-item {
   margin-bottom: 10px;
   padding: 1.5%;
   border-radius: var(--border-radius);
   background-color: var(--light-dark);
   color: var(--primary);
   text-decoration: none;
-}
+} */
 
-.list-item:hover {
+/* .list-item:hover {
   background-color: var(--dark);
-}
-/* a {
+} */
+
+/* .login-input {
+width: 50%;
+margin-right: auto;
+margin-left: auto;
+border-radius: 25px;
+} */
+
+/* .password-input {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 25px;
+} */
+
+/* .posts {
+  padding: 300px;
+} */
+
+
+
+ /* a {
   color: #ffffff;
   text-decoration: none;
-} */
+} */ */
 
 /* p {
   font-size: 16px;
-} */
+}  */
 
 footer {
   padding: 30px;
@@ -678,4 +706,4 @@ footer {
 
 /* footer h2 {
   font-size: 20px;
-} */
+} 

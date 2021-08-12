@@ -9,31 +9,33 @@
     <title>Tech Today</title>
   </head>
 
-<body>
+<body class="flex-column min-100-vh">
     {{!-- <header class="hero">
  <h1 class="app-title">
       <a href="/">The Tech Blog</a></h1> 
     </header> --}}
   
-  <header>
-    <img class="logo" src="images/TechToday.svg" alt=TechTodayLogo>
-    <nav>
-      <ul class="nav_links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/dashboard">Dashboard</a></li>
-        <li><a href="/login">Login</a></li>
-        <li><a href="#" id="logout-link">Logout</a></li>
-      </ul> 
-    </nav>
+ <header class="hero">
+    <h1 class="app-title"><a href="/">TechToday</a></h1>
+ 
+ <nav class="navbar">
+    <ul>
+      {{!-- <li class="li-inline nav-item"><a href="/">Home</a></li> --}}
+      <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
+      <li class="li-inline nav-item"><a href="/login">Login</a></li>
+      <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
+    </ul>
+  </nav>
+ 
   </header>
 
 
- <main>
+  <main class="col-auto">
     {{{body}}}
   </main>
  
 
-  <footer>
+  <footer class="flex-row justify-center">
     &copy; Made with ❤️️ by TechToday
   </footer>
 </body>
@@ -41,7 +43,4 @@
 </html>
 <script 
 src="/javascript/logout.js"
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
 ></script>
