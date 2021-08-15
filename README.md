@@ -13,5 +13,5 @@ A CMS-style blog site to publish thoughts and opinions. Users are prompted so si
 * MySQL
 
 ## Website
-https://seveba.github.io/MVC-TechToday/
+https://polar-gorge-17476.herokuapp.com/
 
